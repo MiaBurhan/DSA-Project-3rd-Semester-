@@ -1,6 +1,6 @@
 # Restaurant Management System (C++ | DSA Project)
 
-A console-based Restaurant Management System built entirely using **linear data structures** — Arrays, Linked Lists, Stacks, and Queues. 
+A console-based Restaurant Management System built entirely using **linear data structures** which includes Arrays, Linked Lists, Stacks, and Queues. 
 No trees, graphs, or associative maps are used anywhere in the project, as per the project constraints.
 
 ## Objective
@@ -17,19 +17,19 @@ To design and implement a working restaurant management application that demonst
 
 ## Features
 
-### 1. Menu Management (`Menu` class — Sawaira)
+### 1. Menu Management (`Menu` class by Sawaira)
 - **Add Item** — inserts a new food item (ID, name, price, quantity) at the end of a doubly linked list.
 - **Display Menu** — traverses and prints all current menu items with stock levels.
 - **Search Item** — looks up a menu item by ID (used internally by the ordering system to check stock).
 - **Delete Item** — removes an item from the linked list by ID and pushes its ID/name onto an undo stack.
 - **Undo** — pops the most recently deleted item off the stack and prompts the user to re-add it.
 
-### 2. Order Management (`OrderSystem` class — Burhan)
+### 2. Order Management (`OrderSystem` class by Burhan)
 - **Place Order** — looks up the item by ID, checks stock availability, decrements quantity, and enqueues the order.
 - **Serve Order** — dequeues the oldest pending order (FIFO) and generates a bill including 5% tax.
 - **Cancel Order** — pops the front of the queue onto a separate cancellation-history stack instead of serving it.
 
-### 3. Billing & Table Reservation (`BillingSystem` class — Asad Cheema)
+### 3. Billing & Table Reservation (`BillingSystem` class by Asad Cheema)
 - **Reserve Table** — scans a fixed array of 5 tables and marks the first free one as reserved.
 - **Show Status** — displays the current Free/Reserved status of all 5 tables.
 
